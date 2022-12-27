@@ -31,7 +31,7 @@
           </a>
           <nav>
             <ul class="header-links">
-              <li><a class="header-link" href="/agencja">agencja</a></li>
+              <li><a class="header-link active-link" href="index.html">agencja</a></li>
               <li>
                 <a class="header-link" href="portfolio.html">portfolio</a>
               </li>
@@ -65,7 +65,7 @@
           <div class="background-gradient">
             <div class="header-and-button container">
               <h1 class="header">efektywne rozwiązania dla waszego biznesu</h1>
-              <input class="main-button" type="button" value="zamów usługę" />
+              <input class="main-button" type="button" value="zamów usługę" data-modal-open/>
             </div>
           </div>
         </div>
@@ -138,28 +138,46 @@
 
           <ul class="photos-list">
             <li>
-              <img
-                src="images/keybord_and_paper.jpg"
-                alt="pracująca osoba pisząca na klawiaturze"
-                width="370"
-                height="294"
-              />
+              <div class="about-description">
+                <img
+                  class="about-photo"
+                  src="images/keybord_and_paper.jpg"
+                  alt="pracująca osoba pisząca na klawiaturze"
+                  width="370"
+                  height="294"
+                />
+                <div class="about-overlay">
+                  <p class="photo-description-about">aplikacje komputerowe</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                src="images/phone_and_laptop.jpg"
-                alt="osoba sprawdzająca telefon"
-                width="370"
-                height="294"
-              />
+              <div class="about-description">
+                <img
+                  class="about-photo"
+                  src="images/phone_and_laptop.jpg"
+                  alt="osoba sprawdzająca telefon"
+                  width="370"
+                  height="294"
+                />
+                <div class="about-overlay">
+                  <p class="photo-description-about">aplikacje mobilne</p>
+                </div>
+              </div>
             </li>
             <li>
-              <img
-                src="images/tablet.jpg"
-                alt="osoba projektuje coś na tablecie"
-                width="370"
-                height="294"
-              />
+              <div class="about-description">
+                <img
+                  class="about-photo"
+                  src="images/tablet.jpg"
+                  alt="osoba projektuje coś na tablecie"
+                  width="370"
+                  height="294"
+                />
+                <div class="about-overlay">
+                  <p class="photo-description-about">rozwiązania graficzne</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -430,5 +448,11 @@
         </div>
       </footer>
     </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>&#10008;</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
