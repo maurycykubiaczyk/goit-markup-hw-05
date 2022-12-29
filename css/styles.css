@@ -509,7 +509,7 @@ background: rgba(47, 48, 58, 0.4);
   color: var(--white-color);
   bottom: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
@@ -534,8 +534,7 @@ background: rgba(47, 48, 58, 0.4);
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 53px;
   height: 4px;
   background-color: var(--blue-color);
@@ -552,8 +551,7 @@ background: rgba(47, 48, 58, 0.4);
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 58px;
   height: 4px;
   background-color: var(--blue-color);
@@ -606,6 +604,7 @@ background: rgba(47, 48, 58, 0.4);
   background-color: var(--white-color);
   border-radius: 50%;
   cursor: pointer;
+  
 }
 
 .hidden-description {
@@ -641,6 +640,7 @@ background: rgba(47, 48, 58, 0.4);
 
 .box-figure {
   position: relative;
+  overflow: hidden;
 }
 
 .hidden-description:hover .box-figure .overlay-figure {
